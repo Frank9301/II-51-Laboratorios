@@ -1,0 +1,145 @@
+body{
+      background-color: rgba(193, 21, 21, 0.623);
+    }
+    h1, h2, h3 {
+      text-align: center;
+      color: white;
+    }
+    .main-title {
+      font-size: 2.5em;
+      border-bottom: 2px solid white;
+    }
+    .title {
+      font-family: 'Arial Black', sans-serif;
+      color: #11319d;
+      margin: 0
+    }
+    
+    .form-group label {
+      display: block;
+      margin-left: 5px;
+      font-weight: bold;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .submit-button {
+      margin-top: 10px;
+      padding: 10px 50px;
+      border-radius: 5px;
+      background-color: #11319d;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+      border: 0;
+      width: 100%;
+    }
+    .submit-container {
+      text-align: center;
+    }
+    fieldset {
+      border: 2px solid #11319d;
+      border-radius: 5px;
+      padding: 10px;
+      
+    }
+
+    .submit-button:hover {
+      background-color: #2e53a3;
+      /* Un azul más oscuro al pasar el mouse */
+    }
+    t.title {
+      font-family: 'Arial Black', sans-serif;
+      color: #11319d;
+      margin: 0
+    }
+    .menu, footer {
+        color:white
+      background-color: #5974cc;
+      padding: 10px 0;
+        margin-bottom: 20px;
+        padding: 10px 0;
+        border-radius: 5px;
+    }
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .menu ul li {
+      margin: 0 15px;
+    }
+    .menu ul li a {
+        text-transform: uppercase;
+      color: rgb(123, 72, 72);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .menu ul li a:hover {
+      text-decoration: underline;
+      background-color: #2e53a3;
+      border-radius: 5px;
+    }
+    .form-section {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    #video-section {
+     display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+        margin: 20px auto;
+    }
+    #video-section iframe {
+      border-radius: 10px;
+      max-width: 540px;
+      
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 10px; !important; 
+    }
+    footer p {
+      font-family: Arial, sans-serif;
+    }
+/* aplica solo a los hijos directos*/
+    footer > p {
+      font-weight: bold; 
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+     footer p {
+      font-style: italic;
+      color: red; 
+     }
+
+     /*aplica a todos los elementos p q sean hermanos de un h1*/
+     h1 ~ p {
+      font-style: italic;
+     }
+     footer h1, footer h2, {
+      margin: 5px 0;
+     }
+     div {
+      background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px; 
+     }

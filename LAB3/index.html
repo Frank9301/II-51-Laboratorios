@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
   <title>LAB-03</title>
   <style>
     body{
@@ -13,7 +14,7 @@
       text-align: center;
       color: white;
     }
-    #main-title {
+    .main-title {
       font-size: 2.5em;
       border-bottom: 2px solid white;
     }
@@ -45,6 +46,11 @@
     .submit-button:hover {
       background-color: #2e53a3;
       /* Un azul más oscuro al pasar el mouse */
+      .title {
+        font-family: 'Arial Black', sans-serif;
+        color: #274dc9;
+        margin: 0
+      }
     }
   </style>
 </head>
@@ -58,12 +64,12 @@
   </header>
 
   <!-- menu -->
-  <nav>
+  <nav class="menu">
     <ul>
-      <li><a href="final/">Inicio</a></li>
-      <li><a href="#">Cursos</a></li>
-      <li><a href="#">Contacto</a></li>
-      <li><a href="#">Ayuda</a></li>
+      <li id="elemento1"><a href="index.html">Inicio</a></li>
+      <li id="elemento2"><a href="cursos">Cursos</a></li>
+      <li id="elemento3"><a href="contacto">Contacto</a></li>
+      <li id="elemento4"><a href="ayuda">Ayuda</a></li>
     </ul>
   </nav>
 
@@ -146,8 +152,9 @@
                 <label for="interes4">Ciencia de Datos</label>
               </div>
           </fieldset>
-
-          <button class="submit-button" type="submit">Registrar</button>
+          
+          <button class="submit-button" 
+          type="submit">Registrar</button>
         </fieldset>
       </form>
     </section>
@@ -158,9 +165,20 @@
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
   </main>
+  <!-- pie de pagina -->
   <footer>
+    <h1>Universidad Central</h1>
     <p>&copy; 2023 Plataforma Educativa Universidad Central</p>
     <p>Contacto: <a href="mailto:fabian.chinchilla@uc.ac.cr">Fabian</p>
+
+      <h2>Información Adicional</h2>
+    <div>
+      <p> Todos los derechos reservados.</p>
+      <section>
+        
+        <p>Para más información, visite nuestro sitio web.</p>
+      </section>
+      
   </footer>
 </body>
 
