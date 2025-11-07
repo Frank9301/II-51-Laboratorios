@@ -1,0 +1,14 @@
+.caja {
+  padding: 10px;
+  border: 1px solid #b312128d;
+  transition: background-color 0.3s;
+}
+
+.caja.color {
+  background-color: #11c4e4;
+  color: #0c5460;
+  font-weight: bold;
+}
+body {
+  background: linear-gradient(180deg, #064385, #ffffff);
+}
