@@ -1,14 +1,76 @@
-.caja {
-  padding: 10px;
-  border: 1px solid #b312128d;
-  transition: background-color 0.3s;
+body {
+  font-family: Arial, sans-serif;
 }
 
-.caja.color {
-  background-color: #11c4e4;
-  color: #0c5460;
-  font-weight: bold;
+/* Para que no quede tan pegado al borde */
+.contenedor-principal {
+  max-width: 600px;
+  margin: 40px auto;
 }
-body {
-  background: linear-gradient(180deg, #064385, #ffffff);
+
+/* Caja de texto que cambia de color */
+.caja {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Clase que se agrega/quita (cambio de color) */
+.caja.resaltado {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Ícono de luna */
+.icono-luna {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: none;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+/* Estilo del contador */
+.contador {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.valor-contador {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.botones-contador button {
+  margin: 0 5px;
+}
+
+/* ===== MODO OSCURO ===== */
+body.modo-oscuro {
+  background-color: #121212 !important;
+  color: #f5f5f5 !important;
+}
+
+/* Inputs en modo oscuro */
+body.modo-oscuro input {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  border-color: #555 !important;
+}
+
+/* Caja en modo oscuro */
+body.modo-oscuro .caja {
+  border-color: #555 !important;
+}
+
+/* Botón de luna en modo oscuro */
+body.modo-oscuro .icono-luna {
+  background-color: #222;
+  color: #f5f5f5;
 }

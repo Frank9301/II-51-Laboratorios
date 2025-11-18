@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Ejercicio Semana 11</title>
-  <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <title>Ejercicio Semana 11</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1lbCEPNTtaed2xpHsD9ESMHqID8onLMwNLD69Npy4HI+N"
+        crossorigin="anonymous">
 </head>
-<body>
 
-  <h2>Formulario de prueba</h2>
+<body class="container">
 
-  <form id="miFormulario">
-    <label>Nombre:
-      <input type="text" id="nombre" />
-    </label><br><br>
+  <!-- Ícono de luna (modo oscuro) -->
+  <button id="btnModoOscuro" class="icono-luna" aria-label="Cambiar modo oscuro">
+    🌙
+  </button>
 
-    <label>Apellido:
-      <input type="text" id="apellido" />
-    </label><br><br>
+  <div class="contenedor-principal">
 
-    <button type="button" id="validarBtn">Validar</button>
-  </form>
+    <h2>Formulario de prueba</h2>
 
-  <p id="mensaje"></p>
+    <form id="miFormulario">
+      <label>Nombre:<br>
+        <input type="text" id="nombre" class="form-control" />
+      </label><br><br>
 
-  <hr>
+      <label>Apellido:<br>
+        <input type="text" id="apellido" class="form-control" />
+      </label><br><br>
 
-  <div id="bloqueTexto" class="caja">
-    Este texto cambiará de color dinámicamente.
+      <button type="button" id="validarBtn">Validar</button>
+    </form>
+
+    <p id="mensaje"></p>
+
+    <hr>
+
+    <div id="bloqueTexto" class="caja">
+      Este texto cambiará de color dinámicamente.
+    </div>
+
+    <button id="agregarClase">Agregar clase</button>
+    <button id="quitarClase">Quitar clase</button>
+
+    <hr>
+
+    <button id="mostrarOcultar">Mostrar/Ocultar Elemento</button>
+    <div id="elementoOculto" style="display:none; margin-top:10px;">
+      Elemento oculto que puede mostrarse
+    </div>
+
+    <hr>
+
+    <!-- CONTADOR -->
+    <div class="contador">
+      <div id="valorContador" class="valor-contador">0</div>
+      <div class="botones-contador">
+        <button id="incrementarBtn">Incrementar</button>
+        <button id="disminuirBtn">Disminuir</button>
+      </div>
+    </div>
+
   </div>
 
-  <button id="agregarClase">Agregar clase</button>
-  <button id="quitarClase">Quitar clase</button>
-
-  <hr>
-
-  <button id="mostrarOcultar">Mostrar/Ocultar Elemento</button>
-  <div id="elementoOculto" style="display:none;">Elemento oculto que puede mostrarse</div>
-
+  <!-- jQuery SIEMPRE antes de tu script -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
 </body>
